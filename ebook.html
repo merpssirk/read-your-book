@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+       
+    <title>Read your E-books</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="/output/css/styles.css">
+     <!-- Enternal JavaScript  -->
+     <script src="js/index.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   
+  </head>
+  <body>
+      <!-- NAVIGATION HTML START -->
+    <div class="navigation">
+        <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation_button">
+            <span class="navigation_icon">&nbsp;</span>
+            <!-- <span class="navigation_icon">&nbsp;</span>
+            <span class="navigation_icon">&nbsp;</span> -->
+        </label>
+        <div class="navigation_background">
+            &nbsp;
+        </div>
+        <nav class="navigation_nav">
+            <ul class="navigation_list">
+                <li class="navigation_item">
+                    <a href="index.html" class="navigation_link">
+                        Home
+                    </a>
+                </li>
+                <li class="navigation_item">
+                    <a href="#" class="navigation_link">
+                        Read Ebooks
+                    </a>
+                </li>
+                <li class="navigation_item">
+                    <a href="#" class="navigation_link">
+                        Weather for Today
+                    </a>
+                </li>
+                <li class="navigation_item">
+                    <a href="#" class="navigation_link">
+                       Game
+                    </a>
+                </li>
+                <li class="navigation_item">
+                    <a href="#" class="navigation_link">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- NAVIGATION HTML END -->
+    <div class="container">
+        <div class="row">
+            <!--Main Content Area Started-->
+            <div class="col-md-8">
+                <img src="/img/reading-book.png" class="responsive">
+                <div class="card mb-4">
+                    <h2 class="card-header" id="fileName">Book Title</h2>
+                    <div class="card-body">
+                        <div class="displayBox scroll-box" id="fileContent">
+                            Select a book from sidebar on the right
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+           
+            <!-- Main Content Area End -->
+
+            <!--Sidebar Content Started-->
+
+            <div class="col-md-4">
+                <!--Search for the word Section Started-->
+                <div class="card my-4">
+                    <h5 class="card-header">Search</h5>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="keyword" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary click-btn" type="button" onclick="highlightTheWordsInSearch()">Search</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-footer" id="searchstat">
+
+                    </div>
+                </div>
+                 <!--Search for the word Section Ended-->
+
+                <!--Select a Book Section Started-->
+
+                <div class="card my-4">
+                    <h5 class="card-header">Select a Book</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#" onclick="loadBook('AliceInWonderland.txt','Alice in Wonderland')">Alice in Wonderland</a></li>
+                                    <li><a href="#" onclick="loadBook('JekyllAndHyde.txt','Dr Jekyll and Mr. Hyde')">Dr Jekyll and Mr. Hyde</a></li>
+                                    <li><a href="#" onclick="loadBook('jacobs-death-bed-prophecy.txt', 'Jacobs Death Bed Prophecy')">Jacob's Death Bed Prophecy</a></li>
+                                    <li><a href="#" onclick="loadBook('asher.txt', 'Asher')">Asher</a></li>
+                                    <li><a href="#" onclick="loadBook('benjamin.txt','Benjamin')">Benjamin</a></li>
+                                    <li><a href="#" onclick="loadBook('dan.txt', 'Dan')">Dan</a></li>
+                                    <li><a href="#" onclick="loadBook('gad.txt', 'Gad')">Gad</a></li>
+                                    <li><a href="#" onclick="loadBook('gad.txt', 'Issachar')">Issachar</a></li>
+                                    <li><a href="#" onclick="loadBook('joseph.txt', 'Joseph')">Josheph</a></li>
+                                    <li><a href="#" onclick="loadBook('judah.txt', 'Judah')">Judah</a></li>
+                                    <li><a href="#" onclick="loadBook('naphtali.txt', 'Naphtali')">Naphtali</a></li>
+                                    <li><a href="#" onclick="loadBook('reuben.txt', 'Reuben')">Reuben</a></li>
+                                    <li><a href="#" onclick="loadBook('simeon.txt', 'Simeon')">Simeon</a></li>
+                                    <li><a href="#" onclick="loadBook('zebulun.txt', 'Zebulun')">Zebulun</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Select a Book Section Ended-->
+
+                <!--Most Used Words Section Started-->
+                <div class="card my-4">
+                    <h5 class="card-header">Most Used Words</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="list-unstyled mb-0" id="mostUsed">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!--Most Used Words Section Ended-->
+
+                <!-- Least Used Words Section Started-->
+                <div class="card my-4">
+                    <h5 class="card-header">Least Used Words</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <ul class="list-unstyled mb-0" id="leastUsed">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Least Used Words Section Ended-->
+                <!--Document Stats-->
+                <div class="card my-4">
+                    <h5 class="card-header">Document Statistics</h5>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li id="docLength"></li>
+                            <li id="wordCount"></li>
+                            <li id="charCount"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer Section Started -->
+        <div class="up" id="up">
+            <i class="fas fa-chevron up"></i>
+        </div>
+        
+        <footer class="copyright">
+            <p>&copy; 2020 | All Right Reserved | Prem Bahadur Chand</p>
+        </footer>
+        <!-- footer Section Ended -->
+
+        <script id="template-ul-items" type="text/template">
+            <li>
+               {{val}}
+            </li>    
+        </script>
+        <!-- This is the id that js will identify this template 
+        because of this we can dynamicly put our words on it-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
