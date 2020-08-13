@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Read your E-books</title>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
-    <script src="https://threejs.org/build/three.min.js"></script>
-    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
-    <script src="https://threejs.org/examples/js/renderers/CSS3DRenderer.js"></script>
-
-
-    <!-- Internal CSS -->
+    <!-- External CSS -->
     <link rel="stylesheet" href="/output/css/styles.css" />
-    <!-- Enternal JavaScript  -->
-    <!-- <script src="js/index.js"></script> -->
 
     <!-- Bootstrap CSS -->
     <link
@@ -26,17 +20,17 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+
+    <!-- Title -->
+    <title>My Frist Project After JavaScript</title>
   </head>
   <body>
     <!-- NAVIGATION HTML START -->
     <header>
       <div class="navigation">
-        <input type="checkbox" class="navigation_checkbox" id="navi-toggle" />
-
+        <input type="checkbox" class="navigation_checkbox" id="navi-toggle"/>
         <label for="navi-toggle" class="navigation_button">
           <span class="navigation_icon">&nbsp;</span>
-          <!-- <span class="navigation_icon">&nbsp;</span>
-            <span class="navigation_icon">&nbsp;</span> -->
         </label>
         <div class="navigation_background">
           &nbsp;
@@ -44,85 +38,57 @@
         <nav class="navigation_nav">
           <ul class="navigation_list">
             <li class="navigation_item">
-              <a href="index.html" class="navigation_link">
-                Home
+              <a href="index.html" class="navigation_link" data-after="HOME">
+                Go To Home Page
+              </a>
+            </li>
+            <li class="navigation_item"> 
+              <a href="ebook.html" class="navigation_link" data-before="READ-EBOOKS">
+                Read-Ebooks
               </a>
             </li>
             <li class="navigation_item">
-              <a href="ebook.html" class="navigation_link">
-                Read Ebooks
+              <a href="calendar.html" class="navigation_link" data-after="CALENDAR">
+                Calendar
               </a>
             </li>
             <li class="navigation_item">
-              <a href="#" class="navigation_link">
-                Weather for Today
+              <a href="chatbot.html" class="navigation_link" data-after="SPEAK-WITH-ROBOT">
+                Speak With Robot
               </a>
             </li>
             <li class="navigation_item">
-              <a href="game.html" class="navigation_link">
-                Game
-              </a>
-            </li>
-            <li class="navigation_item">
-              <a href="#" class="navigation_link">
-                contact me
+              <a href="contact.html" class="navigation_link" data-after="CONTACT-ME">
+                Contact Me
               </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- HADOW AND SHINE WITH JAVASCRIPT STARTED -->
-    <div class="shadow-shine-js">
-      <div id="css"></div>
-      <div id="webgl"></div>
-    </div>
+     <!-- NAVIGATION HTML ENDED -->
+    <!--  -->
+    <section class="hero">
+      <div class="hero-area">
+          <div class="author text-center">
+              <div class="author-img"></div>
+              <h1 class="text-white font-saat font-size-40 text-uppercase py-3">Prem Bahadur Chand</h1>
+              <h5 class="text-white font-ram font-size-50">I'm <span class="element" id="typed"></span></h5>
+          </div>
+      </div>
+  </section>
+    <!--  -->
+      <!-- footer Section Started -->
+      <div class="up" id="up">
+        <i class="fas fa-chevron up"></i>
+      </div>
+      
+      <footer class="copyright">
+        <p>&copy; 2020 | All Right Reserved | Prem Bahadur Chand</p>
+      </footer>
+      <!-- footer Section Ended -->
 
-    <!-- HADOW AND SHINE WITH JAVASCRIPT STARTED -->
-    <!-- NAVIGATION HTML END -->
-
-    <!-- SOCIAL MEDIA ICONS STARTED -->
-    <div class="threed-social-container">
-      <ul>
-        <li>
-          <a href="https://wwww.facebook.com/prem.chand.908347">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="fa fa-facebook"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/PremBahadurCh10">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="fa fa-twitter"></span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="fa fa-instagram"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/prem-bahadur-chand/">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="fa fa-linkedin"></span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- SOCIAL MEDIA ICONS ENDED -->
-    <script src="/js/shadow-shine.js"></script>
+       <!-- JavaScript File  -->
+    <script src="js/index.js"></script>
   </body>
 </html>

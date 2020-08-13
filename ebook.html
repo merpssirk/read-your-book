@@ -7,59 +7,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Internal CSS -->
+    <!-- External CSS -->
     <link rel="stylesheet" href="/output/css/styles.css">
-     <!-- Enternal JavaScript  -->
-     <script src="js/index.js"></script>
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
    
   </head>
   <body>
-      <!-- NAVIGATION HTML START -->
-    <div class="navigation">
-        <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
-
-        <label for="navi-toggle" class="navigation_button">
+    <!-- NAVIGATION HTML START -->
+        <div class="navigation">
+          <input type="checkbox" class="navigation_checkbox" id="navi-toggle" />
+  
+          <label for="navi-toggle" class="navigation_button">
             <span class="navigation_icon">&nbsp;</span>
-            <!-- <span class="navigation_icon">&nbsp;</span>
-            <span class="navigation_icon">&nbsp;</span> -->
-        </label>
-        <div class="navigation_background">
+          </label>
+          <div class="navigation_background">
             &nbsp;
-        </div>
-        <nav class="navigation_nav">
+          </div>
+          <nav class="navigation_nav">
             <ul class="navigation_list">
-                <li class="navigation_item">
-                    <a href="index.html" class="navigation_link">
-                        Home
-                    </a>
-                </li>
-                <li class="navigation_item">
-                    <a href="#" class="navigation_link">
-                        Read Ebooks
-                    </a>
-                </li>
-                <li class="navigation_item">
-                    <a href="#" class="navigation_link">
-                        Weather for Today
-                    </a>
-                </li>
-                <li class="navigation_item">
-                    <a href="#" class="navigation_link">
-                       Game
-                    </a>
-                </li>
-                <li class="navigation_item">
-                    <a href="#" class="navigation_link">
-                        Contact Me
-                    </a>
-                </li>
+              <li class="navigation_item">
+                <a href="index.html" class="navigation_link" data-after="HOME">
+                  Go To Home Page
+                </a>
+              </li>
+              <li class="navigation_item"> 
+                <a href="ebook.html" class="navigation_link" data-before="READ-EBOOKS">
+                  Read-Ebooks
+                </a>
+              </li>
+              <li class="navigation_item">
+                <a href="calendar.html" class="navigation_link" data-after="CALENDAR">
+                  Calendar
+                </a>
+              </li>
+              <li class="navigation_item">
+                <a href="chatbot.html" class="navigation_link" data-after="SPEAK-WITH-ROBOT">
+                  Speak With Robot
+                </a>
+              </li>
+              <li class="navigation_item">
+                <a href="contact.html" class="navigation_link" data-after="CONTACT-ME">
+                  Contact Me
+                </a>
+              </li>
             </ul>
-        </nav>
-    </div>
-    <!-- NAVIGATION HTML END -->
+          </nav>
+        </div>
+       <!-- NAVIGATION HTML ENDED -->
     <div class="container">
         <div class="row">
             <!--Main Content Area Started-->
@@ -185,11 +181,17 @@
                {{val}}
             </li>    
         </script>
+
         <!-- This is the id that js will identify this template 
         because of this we can dynamicly put our words on it-->
+
+        <!-- Bootstrap JavaScript file -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-   
+
+    <!-- JavaScript File  -->
+    <script src="js/index.js"></script>
+
   </body>
 </html>

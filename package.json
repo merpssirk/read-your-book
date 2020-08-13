@@ -7,11 +7,11 @@
     "serve": "live-server",
     "sass": "node-sass -w source/scss -o output/css"
   },
-  
   "author": "",
   "license": "ISC",
   "dependencies": {
     "live-server": "^1.2.1",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "typed.js": "^2.0.11"
   }
 }

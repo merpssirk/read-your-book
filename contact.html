@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Important Meta Tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="/output/css/styles.css" />
+
+    <!-- Title -->
+    <title>Contact Form</title>
+    
+  </head>
+  <body>
+    <!-- NAVIGATION HTML START -->
+    <div class="navigation">
+      <input type="checkbox" class="navigation_checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation_button">
+        <span class="navigation_icon">&nbsp;</span>
+      </label>
+      <div class="navigation_background">
+        &nbsp;
+      </div>
+      <nav class="navigation_nav">
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <a href="index.html" class="navigation_link" data-after="HOME">
+              Go To Home Page
+            </a>
+          </li>
+          <li class="navigation_item">
+            <a
+              href="ebook.html"
+              class="navigation_link"
+              data-after="READ-EBOOKS"
+            >
+              Read-Ebooks
+            </a>
+          </li>
+          <li class="navigation_item">
+            <a href="calendar.html" class="navigation_link" data-after="CALENDAR">
+              Calendar
+            </a>
+          </li>
+          <li class="navigation_item">
+            <a
+              href="chatbot.html"
+              class="navigation_link"
+              data-after="SPEAK-WITH-ROBOT"
+            >
+              Speak With Robot
+            </a>
+          </li>
+          <li class="navigation_item">
+            <a
+              href="contact.html"
+              class="navigation_link"
+              data-after="CONTACT-ME"
+            >
+              Contact Me
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- NAVIGATION HTML ENDED -->
+
+    <!-- Form Section Started -->
+    <section class="contact-page">
+      <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-duration="500">
+          <div class="col-lg-12">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem industry. Lorem Ipsum has been dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been thdummy
+              text of the e industry's...e industry' Lorem Ipsum is simply du
+              mmy text of the printing and typesetting industry.
+            </p>
+            <p></p>
+            <form id="user-data">
+              <div class="contact-form" role="form">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        id="name"
+                        placeholder="Type Your Full Name"
+                      />
+                      <small class="invalid-feedback"
+                        >Please Enter Your Full Name | Thank You</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Type Your Email"
+                      />
+
+                      <small class="invalid-feedback"
+                        >Please Enter Your Valid Email Address | Thank
+                        You</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="number"
+                        name="number"
+                        class="form-control"
+                        id="phone"
+                        placeholder="Enter Your Phone"
+                      />
+
+                      <small class="invalid-feedback"
+                        >Please Enter Your Valid Phone Number | Thank You</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="website"
+                        name="subject"
+                        placeholder="Enter Your Website"
+                      />
+
+                      <small class="invalid-feedback"
+                        >Please Enter Your Valid Website | Thank You</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-12">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        placeholder="Message"
+                        style="height: 150px; margin-bottom: 0;"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <input type="submit" name="submit" value="Submit" class="btn btn-primary" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Form Section Ended -->
+
+    <!-- JavaScript File -->
+    <script src="/js/index.js"></script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 header {
-    height: 40vh;
-    //background: linear-gradient(to right, #7739aa, #143852, rgb(255, 0, 157), green);
+    height: 100vh;
+    /* background: linear-gradient(to right, #7739aa, #143852, rgb(255, 0, 157), green); */
 }
 
 .navigation {
@@ -13,14 +13,13 @@ header {
         height: 5rem;
         width: 5rem;
         position: fixed;
-        top: 6rem;
-        right: 48%;
+        top: 2rem;
+        right: 2rem;
         border-radius: 50%;
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba($color-black, .2);
         text-align: center;
         cursor: pointer;
-        
     }
 
     &_background {
@@ -28,14 +27,12 @@ header {
         width: 4rem;
         border-radius: 50%;
         position: fixed;
-        top: 6.5rem;
-        right: 48.5%;
+        top: 2.5rem;
+        right: 2.5rem;
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
         
-
-        //transform: scale(80);
     }
 
     &_nav {
@@ -92,7 +89,6 @@ header {
         }
     }
 
-
     //FUNCTIONALITY
     &_checkbox:checked ~ &_background {
         transform: scale(80);
@@ -102,7 +98,6 @@ header {
         opacity: 1;
         width: 100%;
     }
-
 
     //ICON
     &_icon {
@@ -149,15 +144,14 @@ header {
         top: 0;
         transform: rotate(135deg);
     }
-
+    
     &_checkbox:checked + &_button &_icon::after {
         top: 0;
         transform: rotate(-135deg);
     }
 }
 
-/* @KEYFRAMES */
-
+//KEYFRAMES
 @keyframes animation_pulse {
     0% {
         opacity: 1;
@@ -169,3 +163,26 @@ header {
 
     }
 }
+
+//HERO SECTION OR AUTHOR SECTION
+.hero {
+    .hero-area {
+        .author {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .author-img {
+                width: 22rem;
+                height: 22rem;
+                border-radius: 50%;
+                margin: 0 auto;
+                background: url(/img/download.jpg) no-repeat;
+                background-size: 100%;
+                background-position: center;
+            }
+        }
+    }
+}  
+
