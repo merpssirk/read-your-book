@@ -17,7 +17,6 @@
 
     <!-- Title -->
     <title>Contact Form</title>
-    
   </head>
   <body>
     <!-- NAVIGATION HTML START -->
@@ -47,7 +46,11 @@
             </a>
           </li>
           <li class="navigation_item">
-            <a href="calendar.html" class="navigation_link" data-after="CALENDAR">
+            <a
+              href="calendar.html"
+              class="navigation_link"
+              data-after="CALENDAR"
+            >
               Calendar
             </a>
           </li>
@@ -77,104 +80,65 @@
     <!-- Form Section Started -->
     <section class="contact-page">
       <div class="container">
-        <div class="row" data-aos="fade-up" data-aos-duration="500">
-          <div class="col-lg-12">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem industry. Lorem Ipsum has been dummy text of the
-              printing and typesetting industry. Lorem Ipsum has been thdummy
-              text of the e industry's...e industry' Lorem Ipsum is simply du
-              mmy text of the printing and typesetting industry.
-            </p>
-            <p></p>
-            <form id="user-data">
-              <div class="contact-form" role="form">
-                <div class="row">
-                  <div class="col-sm-6 col-md-6">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        name="name"
-                        class="form-control"
-                        id="name"
-                        placeholder="Type Your Full Name"
-                      />
-                      <small class="invalid-feedback"
-                        >Please Enter Your Full Name | Thank You</small
-                      >
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-6">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        name="email"
-                        placeholder="Type Your Email"
-                      />
-
-                      <small class="invalid-feedback"
-                        >Please Enter Your Valid Email Address | Thank
-                        You</small
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6 col-md-6">
-                    <div class="form-group">
-                      <input
-                        type="number"
-                        name="number"
-                        class="form-control"
-                        id="phone"
-                        placeholder="Enter Your Phone"
-                      />
-
-                      <small class="invalid-feedback"
-                        >Please Enter Your Valid Phone Number | Thank You</small
-                      >
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-6">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="website"
-                        name="subject"
-                        placeholder="Enter Your Website"
-                      />
-
-                      <small class="invalid-feedback"
-                        >Please Enter Your Valid Website | Thank You</small
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12 col-md-12">
-                    <div class="form-group">
-                      <textarea
-                        class="form-control"
-                        name="message"
-                        placeholder="Message"
-                        style="height: 150px; margin-bottom: 0;"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <input type="submit" name="submit" value="Submit" class="btn btn-primary" />
-              </div>
-            </form>
+        <form
+          action="#" id="user-data"
+          method="get"
+          name="registration"
+          onsubmit="return validate();"
+        >
+          <p>Please Fill the Form below to contact me</p>
+          <div class="form-data">
+            <div>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Type Your Full Name"
+              />
+            </div>
+            <div>
+              <input
+                name="email"
+                type="text"
+                placeholder="Type Your Email Address"
+              />
+            </div>
+            <div>
+              <input
+                name="password1"
+                type="password"
+                placeholder="Type Your Password"
+              />
+            </div>
+            <div>
+              <input
+                name="password2"
+                type="password"
+                placeholder="Re-Type Your Password"
+              />
+            </div>
           </div>
-        </div>
+          <div>
+            <span>
+              I agree to the terms and conditions:
+            </span>
+            <input name="agreement" onclick="toggle();" type="checkbox" />
+          </div>
+
+          <input
+            class="btn"
+            disabled="disabled"
+            name="button"
+            type="submit"
+            value="Submit"
+          />
+        </form>
       </div>
     </section>
     <!-- Form Section Ended -->
 
     <!-- JavaScript File -->
-    <script src="/js/index.js"></script>
+
+    <script src="/js/contact.js"></script>
   </body>
 </html>
