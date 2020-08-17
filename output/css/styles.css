@@ -67,8 +67,7 @@ body {
     display: none; } }
 
 header {
-  height: 100vh;
-  /* background: linear-gradient(to right, #7739aa, #143852, rgb(255, 0, 157), green); */ }
+  height: 100vh; }
 
 .navigation_checkbox {
   display: none; }
@@ -331,66 +330,37 @@ header {
     border: 1px solid #7A89FF; } }
 
 .contact-page {
-  padding-top: 150px;
-  padding-bottom: 300px;
-  border-bottom: 1px solid gray;
-  /* .hide {
-        display: none;
-    }
-      
-    .submit-button {
-        display: block;
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: .75em;
-        letter-spacing: 1px;
-        height: 38px;
-        width: 120px;
-        line-height: 38px;
-        overflow: hidden;
-        background: #4dbecf;
-        border-radius: 3px;
-        box-shadow: 0 15px 30px rgba(black,.1);
-        border: 0;
-        cursor: pointer;
-        transition: all .3s ease;
-        
-        &:hover,
-        &:focus {
-          box-shadow: 0 5px 15px rgba(black,.1);
-        }
-        
-        &.animated {
-          animation: .75s short-press cubic-bezier(0.770, 0.000, 0.175, 1.000) forwards;
-        }
-        
-        > span {
-          display: block;
-          color: white;
-          text-align: center;
-          
-          &.pre-state-msg {
-            transition: all .7s cubic-bezier(0.770, 0.000, 0.175, 1.000);
-            transition-delay: .75s;
-          }
-        }
-        
-        &.state-1 {
-          .pre-state-msg {
-            margin-top: -38px;
-          }
-        }
-        
-        &.state-2 {
-          .pre-state-msg {
-            margin-top: -76px;
-          }
-        }
-    } */ }
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  .contact-page .container {
+    width: 100%;
+    height: 100%; }
+    .contact-page .container form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .contact-page .container form .form-data {
+        display: block; }
+        .contact-page .container form .form-data div {
+          margin: 2rem;
+          padding: 1rem;
+          background-color: white;
+          border-radius: 3.1rem;
+          border: none; }
+          .contact-page .container form .form-data div input {
+            width: 100%;
+            padding: .4rem;
+            border: none;
+            font-size: 1.2rem; }
+      .contact-page .container form span {
+        color: white;
+        font-size: 1.5rem;
+        margin: 2.4rem; }
   .contact-page p {
     color: white;
-    font-size: 26px;
+    font-size: 35px;
     font-weight: 500;
     padding-bottom: 10px; }
   .contact-page .btn {
@@ -400,15 +370,34 @@ header {
     width: 150px;
     overflow: hidden;
     background: #4dbecf;
-    border-radius: 3px;
+    border-radius: 50px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     border: 0;
     cursor: pointer;
-    transition: all .3s ease; }
+    transition: all .3s ease;
+    animation: yourAnimation 3s ease-in-out;
+    margin: 2rem; }
     .contact-page .btn:hover, .contact-page .btn:focus {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
     .contact-page .btn.animated {
       animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards; }
+
+@keyframes yourAnimation {
+  0% {
+    transform: rotate(360deg) scale(2) translateX(5px) translateY(-35%) skewX(15deg) skewY(-10deg);
+    transform-origin: 60% 60%;
+    background: #c7ed;
+    opacity: .4;
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 150px;
+    height: 50px;
+    margin: 15px;
+    padding: 10px;
+    border: 5px solid purple;
+    box-shadow: 5px 5px 2px;
+    outline: 2px solid white; } }
 
 .calendar-container {
   width: 100%;
