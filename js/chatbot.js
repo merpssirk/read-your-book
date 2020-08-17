@@ -1,8 +1,10 @@
 //CHATBOT CODING STARTED
 
 const mic = document.getElementById("mic"); //DOM Element
-console.log(mic);
+//console.log(mic);
+
 const chatAreaMain = document.querySelector('.chatarea-main'); // DOM Element
+
 const chatAreaOuter = document.querySelector('.chatarea-outer');// DOM Element
 
 const intro = ["Hello, I am Chitti", "Hi, I am a Robo", "Hello, My name is Chitti"];
