@@ -31,7 +31,7 @@ const recognition = new SpeechRecognition();
 //अब transcript लाई यो फंसनमा पास गर्नुपर्छ। 
 function showUserMsg(userMsg){
     let output = '';
-    output += `<div class="chatarea-inner user">${userMsg}</div>`; // We create a div dynamically // अब यो माथिको अउटपुटलाई हामीले च्याट-एरिया-आउटर भित्र राख्नु पर्छ। त्यसको लागि तलको जस्तै गर्नुपर्छ। 
+    output += `<div class="chatarea-inner user">${userMsg}</div>`; // created a div dynamically // अब यो माथिको अउटपुटलाई हामीले च्याट-एरिया-आउटर भित्र राख्नु पर्छ। त्यसको लागि तलको जस्तै गर्नुपर्छ। 
     chatAreaOuter.innerHTML += output; // अरू म्यासेज थप्नको लागि माथिको लाइनमा हामीले += गरेका हौं। 
     return chatAreaOuter;
 }
