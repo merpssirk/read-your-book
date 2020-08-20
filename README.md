@@ -9,7 +9,7 @@
 7. Regular Expression
 8. Eventlistner
 9. Loops
-10. Array Function
+10. Arrow function
 11. Array[]
 12. SpeechRecognition() method
 13. Math.random() Method
