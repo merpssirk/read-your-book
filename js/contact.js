@@ -47,15 +47,15 @@ function submitSent () {
  */
 // id [name, email, phone, website]
 
-//const name = document.querySelector('#name');
-//const email = document.querySelector('#email');
-//const phone = document.querySelector('#phone');
-//const website = document.querySelector('#website');
+/* const name = document.querySelector('#name');
+const email = document.querySelector('#email');
+const password1 = document.querySelector('#password1');
+const password2 = document.querySelector('#password2');
 
-//name.addEventListener('blur', valiDateName);
-//email.addEventListener('blur', validateEmail);
-//phone.addEventListener('blur', validatePhone);
-//website.addEventListener('blur', validateWebsite);
+name.addEventListener('blur', valiDateName);
+email.addEventListener('blur', validateEmail);
+password1.addEventListener('blur', validatePassword1);
+password2.addEventListener('blur', validatePassword2); */
 
 /* function valiDateName() {
     //console.log(name.value);
@@ -96,8 +96,8 @@ function validateEmail () {
     }
 }
 
-function validatePhone () {
-    //const reg = /^(\+49-|\+49|0)?\d{15}$/;
+function validatePassword1 () {
+    const reg = /^(\+49-|\+49|0)?\d{15}$/;
     //const reg = /^(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/
     const reg = /^([0-9_\-\.]+)@([0-9_\-\.]+)\.({2,15})$/
     if (!reg.test(phone.value)) {
@@ -113,7 +113,7 @@ function validatePhone () {
     }
 }
 
-function validateWebsite () {
+function validatePassword2 () {
     const reg = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,50})$/;
 
     if (!reg.test(website.value)) {
@@ -127,8 +127,8 @@ function validateWebsite () {
 
         website.classList.add('is-valid');
     }
-}
- */
+} */
+
 function toggle() {
      /*  if (document.forms.registration.button.disabled)
           document.forms.registration.button.disabled = false;
