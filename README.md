@@ -13,7 +13,7 @@
 9. Loops
 10. Arrow function
 
-## Chatbot
+## chatbot
 
 11. Array[]
 12. SpeechRecognition()
